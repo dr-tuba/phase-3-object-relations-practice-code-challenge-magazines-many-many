@@ -3,6 +3,6 @@ class Subscription < ActiveRecord::Base
     belongs_to :magazine
 
     def print_details 
-        puts "#{self.reader.name} subscribed to #{self.magazine.title} for $#{self.price}"
+        puts "#{reader.name} subscribed to #{magazine.title} for $#{price}"
     end
 end
